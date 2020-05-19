@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -13,41 +17,47 @@
   <body class="page">
     <!--Шапка сайта-->
     <header>
-      <nav>
-        <a href="#"
-          ><img src="./images/WebStudio.svg" alt="лого" height="31" width="153"
-        /></a>
-        <!--навигация по сайту-->
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="#" class="link">Контакты</a></li>
-        </ul>
-      </nav>
-      <!--контакты в шапке-->
-      <ul class="site-contact list">
-        <li>
-          <img
-            src="./images/envelope(hover).svg"
-            alt="отправить електронное
-          письмо"
-            height="11"
-            width="16"
-          />
-          <a href="mailto:info@devstudio.com" class="link"
-            >info@devstudio.com</a
+      <div class="conteiner main-nav">
+        <nav class="nav-right">
+          <a href="#" class="logo"
+            ><p><span>Web</span>Studio</p></a
           >
-        </li>
-        <li>
-          <img
-            src="./images/Vector.svg"
-            alt="позвонить по номеру"
-            width="10"
-            height="15"
-          />
-          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+          <!--навигация по сайту-->
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="#" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <!--контакты в шапке-->
+        <ul class="site-contact list">
+          <li class="item">
+            <img
+              src="./images/envelope(hover).svg"
+              alt="отправить електронное
+          письмо"
+              height="11"
+              width="16"
+            />
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <img
+              src="./images/Vector.svg"
+              alt="позвонить по номеру"
+              width="10"
+              height="15"
+            />
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <!--Герой-->
@@ -57,56 +67,73 @@
       </section>
       <!--преимущества-->
       <section class="section">
-        <h2 class="section-title">наши преимущества</h2>
-        <ul class="advantages">
-          <li>
-            <img src="./images/antenna1.svg" alt="антена" />
-            <h3 class="sub-title">Внимание к деталям</h3>
-            <p>
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li>
-            <img src="./images/clock1.svg" alt="часы" />
-            <h3 class="sub-title">Пунктуальность</h3>
-            <p>
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li>
-            <img src="./images/diagram1.svg" alt="диаграма" />
-            <h3 class="sub-title">Планирование</h3>
-            <p>
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <img src="./images/astronaut1.svg" alt="астронавт" />
-            <h3 class="sub-title">Современные технологии</h3>
-            <p>
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+        <div class="conteiner">
+          <h2 class="section-title list zorro">наши преимущества</h2>
+          <ul class="advantages">
+            <li class="advantages-list">
+              <img src="./images/antenna1.svg" alt="антена" />
+              <h3 class="sub-title">Внимание к деталям</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="advantages-list">
+              <img src="./images/clock1.svg" alt="часы" />
+              <h3 class="sub-title">Пунктуальность</h3>
+              <p>
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li class="advantages-list">
+              <img src="./images/diagram1.svg" alt="диаграма" />
+              <h3 class="sub-title">Планирование</h3>
+              <p>
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="advantages-list">
+              <img src="./images/astronaut1.svg" alt="астронавт" />
+              <h3 class="sub-title">Современные технологии</h3>
+              <p>
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Наши работы-->
-      <section class="section">
+      <section class="section-work conteiner">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="works">
-          <li>
-            <img src="./images/img.jpg" alt="ноутбук" />
+          <li class="works-list">
+            <img
+              src="./images/img.jpg"
+              alt="ноутбук"
+              width="370px"
+              height="294px"
+            />
             <a href="#" class="sub-title">Десктопные приложения</a>
           </li>
-          <li>
-            <img src="./images/box.jpg" alt="смартфон" />
+          <li class="works-list">
+            <img
+              src="./images/box.jpg"
+              alt="смартфон"
+              width="370px"
+              height="294px"
+            />
             <a href="#" class="sub-title">Мобильные приложения</a>
           </li>
-          <li>
-            <img src="./images/img(1).jpg" alt="моноблок" />
+          <li class="works-list">
+            <img
+              src="./images/img(1).jpg"
+              alt="моноблок"
+              width="370px"
+              height="294px"
+            />
             <a href="#" class="sub-title">Дизайнерские решения</a>
           </li>
         </ul>
@@ -114,9 +141,14 @@
       <!--Наша команда-->
       <section class="section personal">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="comand">
-          <li>
-            <img src="./images/foto1.jpg" alt="foto John Smith" />
+        <ul class="comand conteiner">
+          <li class="item">
+            <img
+              src="./images/foto1.jpg"
+              alt="foto John Smith"
+              width="270px"
+              height="260px"
+            />
             <h3 class="sub-title">John Smith</h3>
             <p>Product Designer</p>
             <a href="#" class="pict"
@@ -132,8 +164,13 @@
               ><img src="./images/linkedin1.svg" alt="link"
             /></a>
           </li>
-          <li>
-            <img src="./images/foto2.jpg" alt="foto Marta Stewart" />
+          <li class="item">
+            <img
+              src="./images/foto2.jpg"
+              alt="foto Marta Stewart"
+              width="270px"
+              height="260px"
+            />
             <h3 class="sub-title">Marta Stewart</h3>
             <p>Frontend Developer</p>
             <a href="#" class="pict"
@@ -149,8 +186,13 @@
               ><img src="./images/linkedin1.svg" alt="link"
             /></a>
           </li>
-          <li>
-            <img src="./images/foto3.jpg" alt="foto Robert Jakis" />
+          <li class="item">
+            <img
+              src="./images/foto3.jpg"
+              alt="foto Robert Jakis"
+              width="270px"
+              height="260px"
+            />
             <h3 class="sub-title">Robert Jakis</h3>
             <p>Marketing</p>
             <a href="#" class="pict"
@@ -166,8 +208,13 @@
               ><img src="./images/linkedin1.svg" alt="link"
             /></a>
           </li>
-          <li>
-            <img src="./images/foto4.jpg" alt="foto Martin Doe" />
+          <li class="item">
+            <img
+              src="./images/foto4.jpg"
+              alt="foto Martin Doe"
+              width="270px"
+              height="260px"
+            />
             <h3 class="sub-title">Martin Doe</h3>
             <p>UI Designer</p>
             <a href="#" class="pict"

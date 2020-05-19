@@ -20,8 +20,20 @@
   font-size: 14px;
   line-height: 1.71;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0px;
+}
+
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*общий для секций*/
@@ -34,8 +46,49 @@
   letter-spacing: 0.03em;
 }
 
+/*Logo*/
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-right {
+  display: flex;
+}
+.nav-right span {
+  color: var(--accent-color);
+}
+
+.logo {
+  display: flex;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: black;
+  text-decoration: none;
+}
+
 /*навигация по сайту*/
+.site-nav {
+  display: flex;
+}
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:first-child {
+  margin-left: 85px;
+}
+/*очистка крайней геометрии (убираем отступ)*/
+.site-nav .item:last-child {
+  margin-right: 0px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+
   color: var(--secondary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -45,13 +98,27 @@
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  padding-bottom: 28px;
+  border-bottom: 4px solid var(--accent-color);
 }
 .site-nav .link.current {
   color: var(--accent-color);
 }
 
 /*контакты в шапке*/
+.site-contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-contact .item + .item {
+  margin-left: 30px;
+}
+
 .site-contact .link {
+  padding-bottom: 28px;
+  padding-top: 36px;
+
   text-decoration: none;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -66,13 +133,16 @@
 /*Герой*/
 .hero {
   background-color: var(--hero-bcg-color);
+  text-align: center;
+  margin-bottom: 52px;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 46px;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 .hero .btn {
@@ -90,8 +160,21 @@
 }
 
 /*преимущества*/
+.section-work .section-title {
+  margin-bottom: 50px;
+}
+.zorro {
+  display: none;
+}
 .advantages {
+  display: flex;
+
   list-style: none;
+  margin: 0;
+  margin-bottom: 94px;
+  padding: 0;
+  text-align: center;
+  border-bottom: 1px solid #ececec;
 }
 .advantages .sub-title {
   color: var(--secondary-text-color);
@@ -99,11 +182,44 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: left;
+}
+.advantages-list {
+  align-items: center;
+  margin-left: 30px;
+  width: 270px;
+  height: 251px;
+  padding-bottom: 94px;
+}
+.advantages-list:first-child {
+  margin-left: 0;
+}
+
+.advantages-list p {
+  text-align: left;
 }
 
 /*Наши работы*/
+.section-work h2 {
+  margin-top: 94px;
+}
+
+.works-list {
+  background-color: yellow;
+  width: 370px;
+  height: 294px;
+  margin-right: 30px;
+}
+.works-list:last-child {
+  margin-right: 0px;
+}
+
 .works {
+  display: flex;
   list-style: none;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  padding: 0px;
 }
 
 .works .sub-title {
@@ -117,7 +233,8 @@
 
 /*Наша команда*/
 .personal {
-  background-color: var(--secondary-bcg-color);
+  background-color: crimson;
+  /*background-color: var(--secondary-bcg-color);*/
 }
 .personal .section-title {
   font-weight: 700;
@@ -126,15 +243,30 @@
   text-align: center;
 }
 .comand {
+  display: flex;
   list-style: none;
+  padding: 0px;
+}
+.comand .item {
+  align-items: flex-end;
+  margin-right: 30px;
+}
+
+.comand .item:last-child {
+  margin-right: 0px;
 }
 .comand .sub-title {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
+}
+.comand p {
+  text-align: center;
 }
 .comand .pict {
+  align-items: center;
   background-color: var(--primary-bcg-color);
 }
 .comand .pict:hover,
@@ -222,4 +354,11 @@ footer {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+/*Работа с блоками*/
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
 }
