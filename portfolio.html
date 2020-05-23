@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
   </head>
-
-  <body class="page">
+  <body class="page list">
     <!--Шапка сайта-->
     <header>
-      <div class="conteiner main-nav">
+      <div class="conteiner main-nav list">
         <nav class="nav-right">
           <a href="#" class="logo">
             <p><span>Web</span>Studio</p>
@@ -58,18 +61,22 @@
     </header>
     <main>
       <h1 class="zorro">Наши работы</h1>
-      <section class="section conteiner">
-        <!--Фильтры-->
-        <h2 class="zorro">Фильтры</h2>
-        <ul class="filter list">
-          <li><button type="button" class="btn">Все</button></li>
-          <li><button type="button" class="btn">Веб-сайты</button></li>
-          <li><button type="button" class="btn">Приложения</button></li>
-          <li><button type="button" class="btn">Дизайн</button></li>
-          <li><button type="button" class="btn">Маркетинг</button></li>
-        </ul>
+      <section class="section filt">
+        <div class="conteiner">
+          <!--Фильтры-->
+          <h2 class="zorro">Фильтры</h2>
+          <ul class="filter list">
+            <li>
+              <button type="button" class="btn"><span>Все</span></button>
+            </li>
+            <li><button type="button" class="btn">Веб-сайты</button></li>
+            <li><button type="button" class="btn">Приложения</button></li>
+            <li><button type="button" class="btn">Дизайн</button></li>
+            <li><button type="button" class="btn">Маркетинг</button></li>
+          </ul>
+        </div>
       </section>
-      <section class="section">
+      <section class="galery-item">
         <!--Примеры -->
 
         <h2 class="zorro">примеры выполненных работ</h2>
